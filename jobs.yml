@@ -4,7 +4,7 @@
   vars:
     jenkins_url: http://172.31.47.107:8080
     jenkins_user: admin
-    jenkins_password: {{ lookup('amazon.aws.aws_ssm','jenkins_password', region='us-east-1' ) }}
+    jenkins_password: "{{ lookup('amazon.aws.aws_ssm','jenkins_password', region='us-east-1' ) }}"
   tasks:
     - name: Create a jenkins job - frontend
       community.general.jenkins_job:
