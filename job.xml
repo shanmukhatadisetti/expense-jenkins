@@ -8,7 +8,7 @@
             <configVersion>2</configVersion>
             <userRemoteConfigs>
                 <hudson.plugins.git.UserRemoteConfig>
-                    <url>https://github.com/shanmukhatadisetti/expense-terraform.git</url>
+                    <url>https://github.com/shanmukhatadisetti/{{repo_name}}.git</url>
                 </hudson.plugins.git.UserRemoteConfig>
             </userRemoteConfigs>
             <branches>
