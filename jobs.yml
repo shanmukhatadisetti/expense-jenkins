@@ -44,7 +44,7 @@
         url: "{{ jenkins_url }}"
         user: "{{ jenkins_user }}"
       vars:
-        repo_name: expense-parameter
+        repo_name: parameter-store
 
 
 
