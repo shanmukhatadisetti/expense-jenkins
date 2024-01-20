@@ -14,7 +14,7 @@
         url: "{{ jenkins_url }}"
         user: "{{ jenkins_user }}"
       vars:
-        repo_name: frontend
+        repo_name: expense-frontend
 
     - name: Create a jenkins job - backend
       community.general.jenkins_job:
@@ -24,7 +24,7 @@
         url: "{{ jenkins_url }}"
         user: "{{ jenkins_user }}"
       vars:
-        repo_name: backend
+        repo_name: expense-backend
 
     - name: Create a jenkins job - Expense Terraform
       community.general.jenkins_job:
